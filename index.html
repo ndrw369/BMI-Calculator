@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Bagus Indraw" />
+    <meta name="keywords" content="kalkulator berat badan ideal" />
+    <title>Kalkulator Berat Badan Ideal by Indraw</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- start app -->
+    <div class="app-container">
+      <h1>Kalkulator Berat Badan Ideal</h1>
+      <p>
+        Menghitung berat ideal berdasarkan rumus <br />
+        IMT (Indeks Massa Tubuh)
+      </p>
+      <form>
+        <label for="tinggi">Masukkan tinggi Anda (cm):</label>
+        <input
+          type="number"
+          id="tinggi"
+          name="tinggi"
+          placeholder="Contoh: 170"
+        />
+        <label for="jenis-kelamin">Jenis kelamin:</label>
+        <input
+          type="radio"
+          id="jenis-kelamin"
+          name="jenis-kelamin"
+          value="laki-laki"
+        />
+        Laki-laki
+        <input
+          type="radio"
+          id="jenis-kelamin"
+          name="jenis-kelamin"
+          value="perempuan"
+        />
+        Perempuan
+        <button type="button" onclick="hitungBeratIdeal()">
+          Hitung Berat Ideal
+        </button>
+      </form>
+      <p id="hasil"></p>
+    </div>
+    <!-- end app -->
+
+    <!-- start footer -->
+    <p id="footer">Dibuat dengan ❤ oleh Bagus Indraw</p>
+    <!-- end footer -->
+
+    <script src="/script.js"></script>
+  </body>
+</html>
