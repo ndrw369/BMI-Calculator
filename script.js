@@ -15,5 +15,5 @@ function hitungBeratIdeal() {
 
   // Menampilkan hasil perhitungan berat ideal
   document.getElementById("hasil").innerHTML =
-    "Berat ideal Anda adalah " + beratIdeal.toFixed(1) + " kg.";
+    "Berat ideal anda adalah " + beratIdeal.toFixed(1) + " kg";
 }
