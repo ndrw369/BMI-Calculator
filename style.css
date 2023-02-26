@@ -14,10 +14,10 @@ body {
   background-image: linear-gradient(
     to right top,
     #ffffff,
-    #f7f7ff,
-    #eef0ff,
-    #e2e9ff,
-    #d5e3ff
+    #f7fdff,
+    #eefcff,
+    #e2f9ff,
+    #d5f7ff
   );
   background-size: cover;
   background-repeat: no-repeat;
@@ -50,7 +50,7 @@ form {
   margin: 54px auto;
   padding: 27px 21px;
   border: 1px solid #ccc;
-  max-width: 320px;
+  max-width: 270px;
   background-color: #fff;
   border-radius: 10px;
 }
@@ -79,6 +79,7 @@ label {
   background-color: #fff;
   color: #272727;
   font-size: 0.9rem;
+  font-weight: 700;
 }
 
 span {
@@ -110,7 +111,7 @@ button:hover {
 
 #hasil {
   text-align: center;
-  margin: 30px 0;
+  margin: 30px auto;
   font-size: 1rem;
   font-weight: 700;
   color: #272727;
@@ -119,14 +120,17 @@ button:hover {
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 6px 3px;
-  max-width: 320px;
+  max-width: 300px;
   visibility: hidden;
   letter-spacing: 0.5px;
 }
 
 .imt {
   font-size: 0.87rem;
-  margin-bottom: 12px;
+  margin: 33px 0;
+  font-style: italic;
+  color: #272727;
+  opacity: 60%;
 }
 
 .imt a {
@@ -141,9 +145,8 @@ button:hover {
 
 .line {
   height: 1px;
-  max-width: 330px;
+  max-width: 290px;
   background-color: #ccc;
-  margin-top: 54px;
   margin-left: auto;
   margin-right: auto;
 }
