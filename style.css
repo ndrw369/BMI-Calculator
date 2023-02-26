@@ -7,6 +7,7 @@ body {
   padding: 0;
   font-family: "Roboto", sans-serif;
   font-size: 0.96rem;
+  color: #272727;
 }
 
 body {
@@ -31,22 +32,25 @@ body {
 h1 {
   text-align: center;
   margin-top: 30px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  color: #272727;
+  text-transform: uppercase;
 }
 
 p {
   text-align: center;
   opacity: 80%;
-  font-size: 1rem;
-  margin: 12px 0;
+  font-size: 0.9rem;
+  margin-top: 9px;
   line-height: 1.5;
+  color: #272727;
 }
 
 form {
-  margin: 30px auto;
-  padding: 20px;
+  margin: 54px auto;
+  padding: 27px 21px;
   border: 1px solid #ccc;
-  max-width: 330px;
+  max-width: 320px;
   background-color: #fff;
   border-radius: 10px;
 }
@@ -55,12 +59,13 @@ input[type="number"] {
   padding: 10px;
   margin: 12px 0;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 1px solid #ccc;
   box-sizing: border-box;
-  font-size: 1rem;
+  font-size: 0.9rem;
   background-color: #fff;
   outline: none;
+  color: #272727;
 }
 
 input[type="radio"] {
@@ -72,44 +77,112 @@ input[type="radio"] {
 
 label {
   background-color: #fff;
+  color: #272727;
+  font-size: 0.9rem;
+}
+
+span {
+  font-size: 0.9rem;
+  color: #272727;
 }
 
 button {
-  background-color: #183a83;
+  background-color: #4cc9f0;
   color: #fff;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
   cursor: pointer;
   width: 100%;
   margin-top: 12px;
-  border: 1px solid #183a83;
+  border: 1px solid #4cc9f0;
   transition-duration: 0.3s;
 }
 
 button:hover {
   background-color: transparent;
-  border: 1px solid #183a83;
-  color: #183a83;
+  border: 1px solid #4cc9f0;
+  color: #4cc9f0;
 }
 
 #hasil {
   text-align: center;
-  margin-top: 30px;
+  margin: 30px 0;
   font-size: 1rem;
   font-weight: 700;
-  color: #183a83;
+  color: #272727;
   text-transform: uppercase;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 6px 3px;
+  max-width: 320px;
+  visibility: hidden;
+  letter-spacing: 0.5px;
+}
+
+.imt {
+  font-size: 0.87rem;
+  margin-bottom: 12px;
+}
+
+.imt a {
+  font-size: 0.87rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.imt a:hover {
+  color: #4cc9f0;
 }
 
 .line {
   height: 1px;
   max-width: 330px;
   background-color: #ccc;
-  margin: 0 auto;
+  margin-top: 54px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#footer {
+.socmed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 0;
+
+  gap: 0.6rem;
+}
+
+.socmed .bx {
+  font-size: 1.3rem;
+  color: #272727;
+  display: block;
+  transition-duration: 0.5s;
+}
+
+.socmed .bx:hover {
+  color: #4cc9f0;
+}
+
+.socmed .bxl-android {
+  font-size: 1.4rem;
+  margin-left: -5px;
+}
+
+#footer p {
   font-size: 0.87rem;
+}
+
+#footer a {
+  font-size: 0.87rem;
+  text-decoration: none;
+  color: #4cc9f0;
+}
+
+#footer a:hover {
+  color: #272727;
 }

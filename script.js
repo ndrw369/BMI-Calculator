@@ -1,19 +1,22 @@
 function hitungBeratIdeal() {
-  var tinggi = document.getElementById("tinggi").value;
-  var jenisKelamin = document.querySelector(
+  let tinggi = document.getElementById("tinggi").value;
+  let jenisKelamin = document.querySelector(
     'input[name="jenis-kelamin"]:checked'
   ).value;
-  var beratIdeal;
+  let beratIdeal;
 
-  // Menghitung berat ideal berdasarkan rumus IMT (Indeks Massa Tubuh)
-  var imt = ((tinggi / 100) * tinggi) / 100;
+  // BMI
+  let imt = ((tinggi / 100) * tinggi) / 100;
   if (jenisKelamin == "laki-laki") {
     beratIdeal = imt * 22;
   } else {
     beratIdeal = imt * 21;
   }
 
-  // Menampilkan hasil perhitungan berat ideal
+  // Result
   document.getElementById("hasil").innerHTML =
     "Berat ideal anda adalah " + beratIdeal.toFixed(1) + " kg";
+
+  const myDiv = document.getElementById("hasil");
+  myDiv.style.visibility = "visible";
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,7 +8,14 @@
     <meta name="keywords" content="kalkulator berat badan ideal" />
     <title>Kalkulator Berat Badan Ideal by Indraw</title>
 
+    <!-- main css -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- start app -->
@@ -20,7 +27,7 @@
       </p>
 
       <form>
-        <label for="tinggi">Masukkan tinggi Anda (cm):</label>
+        <label for="tinggi">Masukkan tinggi anda (cm):</label>
         <input
           type="number"
           id="tinggi"
@@ -34,14 +41,14 @@
           name="jenis-kelamin"
           value="laki-laki"
         />
-        Laki-laki
+        <span>Laki-laki</span>
         <input
           type="radio"
           id="jenis-kelamin"
           name="jenis-kelamin"
           value="perempuan"
         />
-        Perempuan
+        <span>Perempuan</span>
         <button type="button" onclick="hitungBeratIdeal()">
           Hitung Berat Ideal
         </button>
@@ -51,10 +58,32 @@
     <!-- end app -->
 
     <!-- start footer -->
+    <p class="imt">
+      Apa itu
+      <a href="https://id.wikipedia.org/wiki/Indeks_massa_tubuh" target="_blank"
+        >Indeks Massa Tubuh?</a
+      >
+    </p>
     <div class="line"></div>
-    <p id="footer">Dibuat dengan ❤ oleh Bagus Indraw</p>
+    <div id="footer">
+      <div class="socmed">
+        <a href="https://github.com/ndrw369/BMI-Calculator" target="_blank"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a href="https://twitter.com/indraw369/" target="_blank"
+          ><i class="bx bxl-twitter"></i
+        ></a>
+        <a href="https://bit.ly/3ZidHwk"><i class="bx bxl-android"></i></a>
+      </div>
+      <p>
+        Dibuat dengan ❤ oleh
+        <a href="https://ndrw369.github.io" target="_blank">Bagus Indraw</a>
+      </p>
+    </div>
+
     <!-- end footer -->
 
+    <!-- main js -->
     <script src="/script.js"></script>
   </body>
 </html>
